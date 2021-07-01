@@ -16,24 +16,114 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+  --font-color: white;
 }
 
 /*BODY*/
 	body{
-
+		background-color: #141414;
+		font-size: 18px;
+		
+		
+		
 	}
 
 /*TOPO*/
 	header.topo{
+		display: flex;
+		color: #141414;
+		margin-top: 10px;
+		margin-left: 15px;
+
 		
 	}
 
-/*RODAPÉ*/
-	
+	h2 {
+		color:var(--font-color);
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	h3 {
+		color: #141414;
+	}
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: grey;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		margin-top: 5%;
 		
 	}
 
+	figcaption {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+		width: 858px;
+		
+	}
+
+	
+
+	li {
+		margin: 18px;
+	
+		
+	}
+	li img {
+		width: 186px;
+		height: 160px;
+	}
+
+	li:nth-of-type(1){order:2}
+	li:nth-of-type(2){order:1}
+	li:nth-of-type(3){order:3}
+	li:nth-of-type(4){order:4}
+
+	li:hover {
+		border: 2px solid white;
+		color: white;
+	}
+	button:hover {
+		border: 2px solid white;
+		color: white;
+	}
+
+	/*RODAPÉ*/
+	footer {
+		display: flex;
+		align-content: center;
+		justify-content: center;	
+	}
+
+	button {
+		background-color: #141414;
+		font-size: 18px;
+		width: 230px;
+		height: 35px;
+		color: grey;
+		margin-top: 15px;
+	}
+
+
+	  @media screen and (max-width:500px) {
+		ul {
+		  flex-direction: column;
+		}
+	  }
